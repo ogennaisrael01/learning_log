@@ -10,14 +10,14 @@ def add_expense(expenses):
         date = input("Enter date (DD-MM-YYYY): ")
         description = input("Description(optional): ")
 
-        expenses.append({"Expense ID": expense_ID, "Amount": expense_amount, "Category": expense_category, "Date": date, "Discription": description})
+        expenses.append({"Expense ID": expense_ID, "Amount": expense_amount, "Category": expense_category, "Date": date, "Description": description})
         adddinng_complete =  input("Adding completed: Y/N: ").lower()
         if adddinng_complete == "y":
             break
     print(expenses)
-    print("Expenses Added Succesfully")
+    print("Expenses Added Successfully")
     
-#stores your expeses in a json
+#stores your expenses in a json
     filename = "expenses.json"
     with open(filename, "w") as f:
         json.dump(expenses, f)
@@ -30,7 +30,7 @@ def fetch_expenses():
     except FileNotFoundError:
         return []
     
-# filter expense by category 
+# Filter expense by category 
 def expense_by_category(expenses):
     category = input("Enter the category to filter: ")
     filtered_category = []
@@ -38,11 +38,19 @@ def expense_by_category(expenses):
         if category == expense["Category"]:
             filtered_category.append(expense)
     return filtered_category
-#view overall total
+#view the overall total
 def overall_total(expenses):
     totel = 0
     for expense in expenses:
         total += expense["Amount"]
+    return total
+    # calculate the total by category
+def calculate_total_by_catogory(expense):
+    total = 0
+    catogory_to_calculate = input("Enter the category to calculate")
+    for expense in expenses:
+        if category_to_calculate == expense["Category"]:
+            total += expense["Amount"]
     return total
 
 
