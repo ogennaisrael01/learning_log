@@ -45,9 +45,9 @@ def overall_total(expenses):
         total += expense["Amount"]
     return total
     # calculate the total by category
-def calculate_total_by_catogory(expense):
+def calculate_total_by_catogory(expenses):
     total = 0
-    catogory_to_calculate = input("Enter the category to calculate")
+    category_to_calculate = input("Enter the category to calculate")
     for expense in expenses:
         if category_to_calculate == expense["Category"]:
             total += expense["Amount"]
@@ -60,3 +60,4 @@ print(fetch_expenses())
 expense = fetch_expenses()
 print(expense_by_category(expense))
 print(overall_total(expense))
+print(calculate_total_by_catogory(expense))
