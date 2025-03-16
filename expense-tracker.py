@@ -37,10 +37,10 @@ def expense_by_category(expenses):
     for expense in expenses:
         if category == expense["Category"]:
             filtered_category.append(expense)
-    return filtered_category
+            return filtered_category
 #view the overall total
 def overall_total(expenses):
-    totel = 0
+    total = 0
     for expense in expenses:
         total += expense["Amount"]
     return total
@@ -59,5 +59,5 @@ def calculate_total_by_catogory(expenses):
 print(fetch_expenses())
 expense = fetch_expenses()
 print(expense_by_category(expense))
-print(overall_total(expense))
-print(calculate_total_by_catogory(expense))
+#print(overall_total(expense))
+#print(calculate_total_by_catogory(expense))
