@@ -59,5 +59,5 @@ def calculate_total_by_catogory(expenses):
 print(fetch_expenses())
 expense = fetch_expenses()
 print(expense_by_category(expense))
-#print(overall_total(expense))
+#gprint(overall_total(expense))
 #print(calculate_total_by_catogory(expense))
