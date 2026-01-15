@@ -29,3 +29,6 @@ Author: ogennaisrael01 <ogennaisrael98@gmail.com>
 Date:   Sat Mar 15 10:56:35 2025 +0100
 
     commit expense
+
+
+    {\"message\":\"Invalid API Key or the business can't accept payments at the moment. Please verify your API key and ensure the account is active and able to process payments.\",\"status\":\"failed\",\"data\":null}"
