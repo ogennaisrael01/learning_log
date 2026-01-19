@@ -22,6 +22,9 @@ Date:   Sat Mar 15 11:11:36 2025 +0100
 
     Update expense-tracker.py
     
+
+
+wget -O code.deb https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
 wget -O code.deb https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
     calculating the category total
 
